@@ -12,6 +12,8 @@ const EmployeeList = (props) => {
         {props.employees.map(employee =>
            <EmployeeDetail key={employee._id} employee={employee} />)}
       </div>
+      <button onClick={() => console.log("Clicked.")}
+       className="btn btn-primary">Load More...</button>
     </div>
   )
 };
